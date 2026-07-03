@@ -337,4 +337,91 @@
         
         .modal-body {
             padding: 1.
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="qr-wrapper">
+            <div class="qr-code">
+                <svg viewBox="0 0 682 682" xmlns="http://www.w3.org/2000/svg" class="qr-svg">
+                    <!-- Background -->
+                    <rect width="682" height="682" fill="#1a1a1a"/>
+                    
+                    <!-- Top-left position marker (outer) -->
+                    <rect x="80" y="80" width="150" height="150" fill="none" stroke="white" stroke-width="30"/>
+                    <rect x="110" y="110" width="90" height="90" fill="white"/>
+                    
+                    <!-- Top-right position marker (outer) -->
+                    <rect x="452" y="80" width="150" height="150" fill="none" stroke="white" stroke-width="30"/>
+                    <rect x="482" y="110" width="90" height="90" fill="white"/>
+                    
+                    <!-- Bottom-left position marker (outer) -->
+                    <rect x="80" y="452" width="150" height="150" fill="none" stroke="white" stroke-width="30"/>
+                    <rect x="110" y="482" width="90" height="90" fill="white"/>
+                    
+                    <!-- Center logo circle (dark background) -->
+                    <circle cx="341" cy="341" r="70" fill="#3d3d3d"/>
+                    <circle cx="341" cy="341" r="65" fill="#2a2a2a"/>
+                    
+                    <!-- Center logo (golden bird/wing) -->
+                    <g transform="translate(341, 341)">
+                        <path d="M -15 -10 Q -5 -20 5 -15 Q 15 -10 10 5 Q 0 15 -10 10 Z" fill="#d4a574"/>
+                        <circle cx="5" cy="-8" r="3" fill="#d4a574"/>
+                    </g>
+                    
+                    <!-- QR data pattern (simplified grid) -->
+                    <g fill="white">
+                        <!-- Top area pattern -->
+                        <rect x="250" y="80" width="40" height="40"/>
+                        <rect x="300" y="80" width="40" height="40"/>
+                        <rect x="330" y="80" width="40" height="40"/>
+                        
+                        <rect x="250" y="130" width="40" height="40"/>
+                        <rect x="330" y="130" width="40" height="40"/>
+                        
+                        <!-- Middle-left pattern -->
+                        <rect x="80" y="250" width="40" height="40"/>
+                        <rect x="130" y="250" width="40" height="40"/>
+                        <rect x="80" y="300" width="40" height="40"/>
+                        
+                        <!-- Middle-right pattern -->
+                        <rect x="512" y="250" width="40" height="40"/>
+                        <rect x="562" y="250" width="40" height="40"/>
+                        <rect x="562" y="300" width="40" height="40"/>
+                        
+                        <!-- Bottom area pattern -->
+                        <rect x="250" y="512" width="40" height="40"/>
+                        <rect x="300" y="512" width="40" height="40"/>
+                        <rect x="330" y="512" width="40" height="40"/>
+                        <rect x="250" y="562" width="40" height="40"/>
+                        <rect x="330" y="562" width="40" height="40"/>
+                    </g>
+                    
+                    <!-- Decorative coins -->
+                    <circle cx="227" cy="68" r="25" fill="#a8793f" opacity="0.8"/>
+                    <circle cx="227" cy="68" r="20" fill="#c4956e"/>
+                    
+                    <circle cx="614" cy="480" r="35" fill="#a8793f" opacity="0.8"/>
+                    <circle cx="614" cy="480" r="30" fill="#c4956e"/>
+                    
+                    <!-- Decorative green elements -->
+                    <polygon points="30,20 80,60 50,90" fill="#1b7a4f"/>
+                    <polygon points="652,600 600,550 620,500" fill="#1b7a4f"/>
+                    <polygon points="620,80 650,120 600,140" fill="#1b7a4f"/>
+                </svg>
+            </div>
+            <h1>Scan Me</h1>
+            <p>Point your camera to scan this QR code</p>
+        </div>
+    </div>
+</body>
+</html>
+
             
